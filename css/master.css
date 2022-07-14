@@ -1,0 +1,29 @@
+:root {
+	--background-color: #232323;
+	--foreground-color: #313131;
+}
+
+* {
+	font: 1rem 'Courier New', monospace;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 1fr 3rem;
+	margin: 0;
+	background-color: var(--background-color);
+	height: 100vh;
+}
+
+.dwm {
+}
+
+.taskbar {
+	background-color: var(--foreground-color);
+	height: 3rem;
+	display: grid;
+	grid-template-columns: 3rem 1fr 7rem;
+}
+
+.task-icon-holder {
+}
