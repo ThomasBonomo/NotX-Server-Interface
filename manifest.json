@@ -5,7 +5,8 @@
 	"display": "fullscreen",
 	"background_color": "#000",
 	"theme_color": "#000",
-	"orientation": "portrait-primary",
+	"orientation_bak": "portrait-primary",
+	"orientation": "portrait",
 	"icons": [
 		{
 			"src": "res/icon_72x.png",
