@@ -3,19 +3,32 @@
 	<head>
 		<title>NotX Server</title>
 		<link rel="stylesheet" href="css/master.css"/>
+		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
-		<div id="dwm" class="dwm">
-			test
+		<div id="dwm" class="dwm"></div>
+		
+		<div id="start" class="start-menu" onmouseleave="toggleStart()" style="visibility: hidden;">
+			<div class="temp" onclick="setFullscreen()"></div>
+			<div class="temp"></div>
+			<div class="temp"></div>
+			<div class="temp"></div>
+			<div class="temp"></div>
+			<div class="temp"></div>
+			<div class="temp"></div>
+			<div class="temp">
+				<button></button>
+			</div>
 		</div>
+		
 		<div class="taskbar">
-			<button class="start-button"></button>
+			<button class="start-button" onclick="toggleStart()"></button>
 			<div class="task-icon-holder">
 			</div>
-			<div class="taskbar-calender">
+			<button class="taskbar-calender">
 				<div class="taskbar-calender-item">Sat 11:55</div>
 				<div class="taskbar-calender-item">16-7-2022</div>
-			</div>
+			</button>
 		</div>
 	</body>
 </html>
