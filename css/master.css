@@ -1,6 +1,7 @@
 :root {
 	--background-color: #232323;
 	--foreground-color: #313131;
+	--text-color: #999;
 }
 
 * {
@@ -26,4 +27,15 @@ body {
 }
 
 .task-icon-holder {
+}
+
+.taskbar-calender {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.taskbar-calender-item {
+	color: var(--text-color);
+	text-align: center;
+	margin: auto;
 }
