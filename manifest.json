@@ -2,7 +2,7 @@
 	"name": "NotX Server Interface",
 	"short_name": "notx_svi",
 	"start_url": "index.html",
-	"display": "standalone",
+	"display": "fullscreen",
 	"background_color": "#000",
 	"theme_color": "#000",
 	"orientation": "portrait-primary",
@@ -11,6 +11,41 @@
 			"src": "res/icon_72x.png",
 			"type": "image/png",
 			"sizes": "72x72"
+		},
+		{
+			"src": "res/icon_96x.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "res/icon_128x.png",
+			"type": "image/png",
+			"sizes": "128x128"
+		},
+		{
+			"src": "res/icon_144x.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "res/icon_152x.png",
+			"type": "image/png",
+			"sizes": "152x152"
+		},
+		{
+			"src": "res/icon_192x.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "res/icon_384x.png",
+			"type": "image/png",
+			"sizes": "384x384"
+		},
+		{
+			"src": "res/icon_512x.png",
+			"type": "image/png",
+			"sizes": "512x512"
 		}
 	]
 }
