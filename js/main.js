@@ -6,8 +6,6 @@ iY = 0;
 mD = false;
 cW = {};
 
-start;
-
 /* Pre-declared Events */
 document.onload = () => {
 	start = document.getElementById("start");
@@ -30,7 +28,7 @@ document.onmousedown = () => {
 	
 	mD = true;
 	
-	if (cW.id !== "start" & start.style.visibility === "visible")
+	if (cW.id !== "start" && start.style.visibility === "visible")
 		closeStart();
 }
 
