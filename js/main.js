@@ -27,13 +27,13 @@ document.onmousedown = () => {
 	iY = window.event.y - (cW.style.marginTop.replace("px", "") / 1);
 	
 	mD = true;
-	
-	if (cW.id !== "start" && start.style.visibility === "visible")
-		closeStart();
 }
 
 document.onmouseup = () => {
 	mD = false;
+	
+	if (cW.id !== "start" && start.style.visibility === "visible")
+		closeStart();
 }
 
 /* Function Declarations */
