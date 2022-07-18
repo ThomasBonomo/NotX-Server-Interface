@@ -24,8 +24,15 @@ document.onmousemove = () => {
 }
 
 document.onmousedown = () => {
-	tB = window.event.target;
-	cW = window.event.path[1];
+	if (window.event.target.classList[0] === "program-name") {
+		tB = window.event.path[1];
+		cW = window.event.path[2];
+	}
+	else {
+		tB = window.event.target;
+		cW = window.event.path[1];
+	}
+	
 	iX = window.event.x - (cW.style.marginLeft.replace("px", "") / 1);
 	iY = window.event.y - (cW.style.marginTop.replace("px", "") / 1);
 	

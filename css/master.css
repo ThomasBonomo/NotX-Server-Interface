@@ -138,12 +138,6 @@ body {
 	margin: auto;
 }
 
-.title-bar {
-	display: grid;
-	grid-template-columns: 1fr 2rem 2rem 2rem;
-	background-color: var(--special-color);
-}
-
 .desktop-window {
 	display: grid;
 	grid-template-rows: 2rem 1fr;
@@ -151,4 +145,17 @@ body {
 	background-color: var(--foreground-color);
 	width: 400px;
 	height: 280px;
+}
+
+.title-bar {
+	display: grid;
+	grid-template-columns: 1fr 2rem 2rem 2rem;
+	background-color: var(--special-color);
+}
+
+.program-name {
+	color: var(--text-color);
+	margin: auto;
+	margin-left: .9rem;
+	font-size: 1.2rem;
 }
