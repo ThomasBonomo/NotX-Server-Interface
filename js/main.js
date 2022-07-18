@@ -16,7 +16,7 @@ document.onmousemove = () => {
 	mX = window.event.x;
 	mY = window.event.y;
 	
-	if (mD === true && cW.classList[0] === "desktop-window") {
+	if (mD === true && cW.classList[0] === "title-bar") {
 		cW.style.marginLeft = mX - iX + "px";
 		cW.style.marginTop  = mY - iY + "px";
 	}
