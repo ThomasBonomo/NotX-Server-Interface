@@ -4,6 +4,7 @@ mY = 0;
 iX = 0;
 iY = 0;
 mD = false;
+tB = {};
 cW = {};
 
 /* Pre-declared Events */
@@ -16,16 +17,17 @@ document.onmousemove = () => {
 	mX = window.event.x;
 	mY = window.event.y;
 	
-	if (mD === true && cW.classList[0] === "desktop-window") {
+	if (mD === true && tB.classList[0] === "title-bar") {
 		cW.style.marginLeft = mX - iX + "px";
 		cW.style.marginTop  = mY - iY + "px";
 	}
 }
 
 document.onmousedown = () => {
-	cW = window.event.target;
+	tB = window.event.target;
+	cW = window.event.path[1];
 	iX = window.event.x - (cW.style.marginLeft.replace("px", "") / 1);
-	iY = window.event.y - (cW.style.marginTop.replace("px", "")  / 1);
+	iY = window.event.y - (cW.style.marginTop.replace("px", "") / 1);
 	
 	mD = true;
 }
