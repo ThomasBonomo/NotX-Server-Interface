@@ -4,7 +4,7 @@ mY = 0;
 iX = 0;
 iY = 0;
 mD = false;
-tB = {};
+cT = {};
 cW = {};
 
 /* Pre-declared Events */
@@ -17,7 +17,7 @@ document.onmousemove = () => {
 	mX = window.event.x;
 	mY = window.event.y;
 	
-	if (mD === true && tB.classList[0] === "title-bar") {
+	if (mD === true && cT.classList[0] === "title-bar") {
 		cW.style.marginLeft = mX - iX + "px";
 		cW.style.marginTop  = mY - iY + "px";
 	}
@@ -25,11 +25,11 @@ document.onmousemove = () => {
 
 document.onmousedown = () => {
 	if (window.event.target.classList[0] === "program-name") {
-		tB = window.event.path[1];
+		cT = window.event.path[1];
 		cW = window.event.path[2];
 	}
 	else {
-		tB = window.event.target;
+		cT = window.event.target;
 		cW = window.event.path[1];
 	}
 	
