@@ -127,6 +127,7 @@ body {
 .desktop-window {
 	display: grid;
 	grid-template-rows: 1rem 1fr;
+	position: static;
 	background-color: var(--foreground-color);
 	width: 10rem;
 	height: 10rem;
