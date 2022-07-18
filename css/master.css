@@ -21,6 +21,11 @@ body {
 	height: 100vh;
 }
 
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
 .temp {
 	border: 1px solid magenta;
 	width: 100%;
