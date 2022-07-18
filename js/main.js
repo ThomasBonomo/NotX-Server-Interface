@@ -23,7 +23,7 @@ document.onmousemove = () => {
 }
 
 document.onmousedown = () => {
-	cW = window.event.target;
+	cW = window.event.path[1];
 	iX = window.event.x - (cW.style.marginLeft.replace("px", "") / 1);
 	iY = window.event.y - (cW.style.marginTop.replace("px", "")  / 1);
 	
