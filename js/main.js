@@ -9,6 +9,7 @@ cW = {};
 /* Pre-declared Events */
 document.onload = () => {
 	start = document.getElementById("start");
+	dwm   = document.getElementById("dwm");
 }
 
 document.onmousemove = () => {
@@ -53,4 +54,9 @@ function toggleStart() {
 	if (start.style.visibility === "hidden")
 		return openStart();
 	closeStart();
+}
+
+/* Program Windows */
+function openWindow() {
+	dwm.innerHTML += "<div class="desktop-window"></div>";
 }
