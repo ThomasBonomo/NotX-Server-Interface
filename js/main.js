@@ -25,7 +25,7 @@ document.onmousemove = () => {
 document.onmousedown = () => {
 	cW = window.event.target;
 	iX = window.event.x - (cW.style.marginLeft.replace("px", "") / 1);
-	iY = window.event.y - (cW.style.marginTop.replace("px", "") / 1);
+	iY = window.event.y - (cW.style.marginTop.replace("px", "")  / 1);
 	
 	mD = true;
 }
@@ -58,5 +58,5 @@ function toggleStart() {
 
 /* Program Windows */
 function openWindow() {
-	dwm.innerHTML += "<div class="desktop-window"></div>";
+	dwm.innerHTML += "<div class=\"desktop-window\"></div>";
 }
