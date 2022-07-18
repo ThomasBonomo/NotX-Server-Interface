@@ -149,6 +149,6 @@ body {
 	grid-template-rows: 2rem 1fr;
 	position: fixed;
 	background-color: var(--foreground-color);
-	width: 10rem;
-	height: 10rem;
+	width: 200px;
+	height: 170px;
 }
