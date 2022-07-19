@@ -1,8 +1,10 @@
 :root {
 	--background-color: #232323;
 	--foreground-color: #313131;
+	--top-color: #3c3c3c;
 	--text-color: #999;
 	--special-color: #242;
+	--special-color-light: #265426;
 }
 
 ::-webkit-scrollbar {
@@ -10,7 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: var(--background-color);
+	background-color: var(--top-color);
 }
 
 * {
@@ -175,6 +177,16 @@ iframe {
 	font-size: 1.2rem;
 }
 
+.program-control {
+	color: var(--text-color);
+	background-color: var(--special-color);
+	border: none;
+}
+
+.program-control:active {
+	background-color: var(--special-color-light);
+}
+
 /* Program styles */
 
 .prog-settings {
@@ -192,8 +204,8 @@ iframe {
 
 .setting-name {
 	display: flex;
-	color: var(--text-color);
-	background-color: var(--background-color);
+	color: var(--background-color);
+	background-color: var(--top-color);
 	height: 100%;
 	margin: 0;
 	font-size: 1rem;
@@ -207,6 +219,6 @@ iframe {
 }
 
 .setting-value-box {
-	background-color: var(--background-color);
+	background-color: var(--top-color);
 	border-radius: .2rem;
 }
