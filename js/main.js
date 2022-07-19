@@ -6,6 +6,7 @@ iY = 0;
 mD = false;
 cT = {};
 cW = {};
+mZ = 0;
 
 /* Pre-declared Events */
 document.onload = () => {
@@ -27,10 +28,14 @@ document.onmousedown = () => {
 	if (window.event.target.classList[0] === "program-name") {
 		cT = window.event.path[1];
 		cW = window.event.path[2];
+		mZ++;
+		cW.style.zIndex = mZ;
 	}
 	else {
 		cT = window.event.target;
 		cW = window.event.path[1];
+		mZ++;
+		cW.style.zIndex = mZ;
 	}
 	
 	iX = window.event.x - (cW.style.marginLeft.replace("px", "") / 1);
