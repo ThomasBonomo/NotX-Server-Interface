@@ -6,9 +6,27 @@
 		<button>c</button>
 	</div>
 	<div class="prog-settings">
-		<div class="prog-settings-names">
+		<div class="prog-settings-list">
+			<p class="setting-name">Account Name</p>
+			<p class="setting-name">Account Name</p>
+			<p class="setting-name">Account Name</p>
+			<p class="setting-name">Account Name</p>
+			<p class="setting-name">Account Name</p>
+			<p class="setting-name">Account Name</p>
+			<p class="setting-name">Account Name</p>
+			<p class="setting-name">Account Name</p>
+			<p class="setting-name">Account Name</p>
 		</div>
-		<div class="prog-settings-values">
+		<div class="prog-settings-list">
+			<div class="setting-value-box"></div>
+			<div class="setting-value-box"></div>
+			<div class="setting-value-box"></div>
+			<div class="setting-value-box"></div>
+			<div class="setting-value-box"></div>
+			<div class="setting-value-box"></div>
+			<div class="setting-value-box"></div>
+			<div class="setting-value-box"></div>
+			<div class="setting-value-box"></div>
 		</div>
 	</div>
 </div>
