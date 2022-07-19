@@ -1,0 +1,14 @@
+<div class="desktop-window">
+	<div class="title-bar">
+		<p class="program-name">Settings</p>
+		<button>h</button>
+		<button>m</button>
+		<button>c</button>
+	</div>
+	<div class="prog-settings">
+		<div class="prog-settings-names">
+		</div>
+		<div class="prog-settings-values">
+		</div>
+	</div>
+</div>

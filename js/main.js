@@ -66,6 +66,12 @@ function toggleStart() {
 }
 
 /* Program Windows */
-function openWindow() {
-	dwm.innerHTML += "<div class=\"desktop-window\"></div>";
+async function openWindow() {
+	let response = await fetch("prog/settings", {method: "get"});
+	
+	if (response.status !== 200)
+		throw new Error("Unable to fetch program body.");
+	let progBody = await response.text();
+	
+	dwm.innerHTML += progBody;
 }

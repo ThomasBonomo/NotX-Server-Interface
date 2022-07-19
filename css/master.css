@@ -26,6 +26,8 @@ iframe {
 	height: 100%;
 }
 
+/* Extra properties */
+
 .temp {
 	border: 1px solid magenta;
 	width: 100%;
@@ -44,7 +46,7 @@ iframe {
 	-webkit-select: "";
 }
 
-
+/* Single component styles */
 
 .dwm {
 }
@@ -163,4 +165,9 @@ iframe {
 	margin: auto;
 	margin-left: .9rem;
 	font-size: 1.2rem;
+}
+
+/* Program styles */
+
+.prog-settings {
 }
