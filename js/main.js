@@ -65,6 +65,11 @@ function toggleStart() {
 	closeStart();
 }
 
+function closeWindow()
+{
+	window.event.path[2] = null;
+}
+
 /* Program Windows */
 async function openWindow() {
 	let response = await fetch("prog/settings", {method: "get"});
