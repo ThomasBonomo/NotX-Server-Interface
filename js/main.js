@@ -67,7 +67,7 @@ function toggleStart() {
 
 function closeWindow()
 {
-	window.event.path[2] = null;
+	window.event.path[2].remove();
 }
 
 /* Program Windows */
