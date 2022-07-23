@@ -19,8 +19,7 @@ document.onmousemove = () => {
 	mY = window.event.y;
 	
 	if (mD === true && cT.classList[0] === "title-bar") {
-		cW.style.marginLeft = mX - iX + "px";
-		cW.style.marginTop  = mY - iY + "px";
+		cW.style.transform = "translate(" + (mX - iX + "px,") + (mY - iY + "px") + ")";
 	}
 }
 
@@ -38,8 +37,11 @@ document.onmousedown = () => {
 		cW.style.zIndex = mZ;
 	}
 	
-	iX = window.event.x - (cW.style.marginLeft.replace("px", "") / 1);
-	iY = window.event.y - (cW.style.marginTop.replace("px", "") / 1);
+	if (cW.style.transform === "")
+		cW.style.transform = "translate(0, 0)";
+	
+	iX = window.event.x - (cW.style.transform.match(/\d+/g)[0] / 1);
+	iY = window.event.y - (cW.style.transform.match(/\d+/g)[1] / 1);
 	
 	mD = true;
 }
