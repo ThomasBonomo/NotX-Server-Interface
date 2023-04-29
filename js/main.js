@@ -25,14 +25,17 @@ document.onmousemove = () => {
 
 document.onmousedown = () => {
 	if (window.event.target.classList[0] === "program-name") {
-		cT = window.event.path[1];
-		cW = window.event.path[2];
+		//cT = window.event.path[1];
+		//cW = window.event.path[2];
+		cT = window.event.composedPath()[1];
+		cW = window.event.composedPath()[2];
 		mZ++;
 		cW.style.zIndex = mZ;
 	}
 	else {
 		cT = window.event.target;
-		cW = window.event.path[1];
+		//cW = window.event.path[1];
+		cW = window.event.composedPath()[1];
 		mZ++;
 		cW.style.zIndex = mZ;
 	}
@@ -74,7 +77,8 @@ function toggleStart() {
 
 function closeWindow()
 {
-	window.event.path[2].remove();
+	//window.event.path[2].remove();
+	window.event.composedPath()[2].remove();
 }
 
 /* Program Windows */
